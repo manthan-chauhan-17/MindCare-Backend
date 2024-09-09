@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '../../../.env' });
 const mongoose = require('mongoose');
 const { connectToDatabase } = require('..');
 
@@ -15,10 +16,11 @@ const getAllSongs = async () => {
 
     try {
         const result = await Song.find();
+        console.log(result);
         return result;
     } catch (err) {
         console.error("Failed to fetch songs", err);
     }
 };
-
-module.exports = {getAllSongs};
+getAllSongs();
+// module.exports = {getAllSongs};

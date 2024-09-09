@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-const uri = `mongodb+srv://manthan:11082003@mindcarecluster.qoyvt.mongodb.net/MindCareDB?retryWrites=true&w=majority&appName=MindCareCluster;`
+require('dotenv').config({path : '../../.env'});
+
+const uri = process.env.MONGO_URI;
 
 const connectToDatabase = async () => {
     try {
