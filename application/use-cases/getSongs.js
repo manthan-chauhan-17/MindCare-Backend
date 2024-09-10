@@ -1,4 +1,5 @@
 const Song = require("../../domain/entities/song");
+const { getAllSongs } = require("../../infrastructure/db/queries/songQueries");
 const UseCaseInterface = require("../interfaces/useCaseInterface");
 
 class GetSongs extends UseCaseInterface{

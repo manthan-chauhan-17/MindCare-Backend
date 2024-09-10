@@ -22,5 +22,5 @@ const getAllSongs = async () => {
         console.error("Failed to fetch songs", err);
     }
 };
-getAllSongs();
-// module.exports = {getAllSongs};
+
+module.exports = {getAllSongs};

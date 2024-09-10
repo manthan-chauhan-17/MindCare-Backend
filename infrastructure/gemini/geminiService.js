@@ -53,9 +53,4 @@ class GeminiApi extends QuotesRepository{
     }
 }
 
-const api = new GeminiApi();
-
-api.getAdviceByMood("sad").then((advice) => {
-    const jsonObject = JSON.parse(advice);
-    console.log(jsonObject.advice);
-});
+module.exports = GeminiApi;
