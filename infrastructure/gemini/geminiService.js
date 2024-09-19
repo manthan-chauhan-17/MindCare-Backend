@@ -1,4 +1,4 @@
-require('dotenv').config({path : '../../.env'});
+require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const QuotesRepository = require("../../application/interfaces/quotesRepository");
 const { model : mongooseModel } = require("mongoose");
